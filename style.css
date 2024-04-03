@@ -11,14 +11,17 @@ body, html {
 
 .slider {
     position: relative;
-    max-width: 600px;
+    width: 600px; /* Adjust based on desired width */
+    height: 400px; /* Adjust based on desired height */
     text-align: center;
+    overflow: hidden; /* Hide parts of the image that overflow the container size */
 }
 
 .slide-info img {
     width: 100%;
-    max-height: 400px;
+    height: 100%;
     object-fit: cover;
+    object-position: center; /* Center the image within the container */
 }
 
 .slider--btn {
