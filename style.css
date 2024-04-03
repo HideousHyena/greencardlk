@@ -5,9 +5,14 @@ body, html {
     height: 100%;
 }
 
+#gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide the scrollbar */
+}
+
 #gallery {
     display: flex;
-    overflow-x: scroll;
     padding: 20px;
     gap: 20px; /* Space between images */
 }
@@ -20,4 +25,24 @@ body, html {
 
 #gallery img:hover {
     transform: scale(1.1); /* Slightly scale images on hover */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    user-select: none;
+}
+
+#left-arrow {
+    left: 0;
+}
+
+#right-arrow {
+    right: 0;
 }
