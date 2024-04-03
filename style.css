@@ -3,46 +3,40 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-}
-
-#gallery-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden; /* Hide the scrollbar */
-}
-
-#gallery {
     display: flex;
-    padding: 20px;
-    gap: 20px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
 }
 
-#gallery img {
-    width: 200px; /* Fixed width for images */
-    cursor: pointer;
-    transition: transform 0.2s; /* Smooth scaling on hover */
+.slider {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
 }
 
-#gallery img:hover {
-    transform: scale(1.1); /* Slightly scale images on hover */
+.slide-info img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
 }
 
-.arrow {
+.slider--btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
     cursor: pointer;
-    font-size: 24px;
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
-    user-select: none;
+    z-index: 100;
 }
 
-#left-arrow {
+.slider--btn__prev {
     left: 0;
 }
 
-#right-arrow {
+.slider--btn__next {
     right: 0;
 }
