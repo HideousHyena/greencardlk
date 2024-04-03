@@ -2,27 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Card Visa</title>
+    <title>Image Slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="left-arrow" class="arrow">&lt;</div>
-    <div id="gallery">
-        <img src="images/usa.jpg" alt="Image 1" data-url="page1.html">
-        <img src="images/japan.jpg" alt="Image 2" data-url="page1.html">
-        <img src="images/finland.jpg" alt="Image 3" data-url="page1.html">
-        <img src="images/canada.jpg" alt="Image 4" data-url="page1.html">
-        <img src="images/sweden.jpg" alt="Image 5" data-url="page1.html">
-        <img src="images/germany.jpg" alt="Image 6" data-url="page1.html">
-        <img src="images/australia.jpg" alt="Image 7" data-url="page1.html">
-        <img src="images/norway.jpg" alt="Image 8" data-url="page1.html">
-        <img src="images/france.jpg" alt="Image 9" data-url="page1.html">
 
-        <!-- Add more images as needed -->
+<div class="slider">
+    <div class="slide-info" id="slide-info">
+        <!-- Slide info and images will be updated here -->
     </div>
-<div id="left-arrow" class="arrow">&lt;</div>
+    <button class="slider--btn slider--btn__prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slider--btn slider--btn__next" onclick="changeSlide(1)">&#10095;</button>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
